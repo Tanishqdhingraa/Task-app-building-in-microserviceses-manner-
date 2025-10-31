@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ Configuration
 const PORT = process.env.PORT || 3005;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/users';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://mongo:27017/users';
 
 // ✅ Middleware (body parser built into Express)
 app.use(express.json());
