@@ -1,0 +1,7 @@
+Task service 
+
+Using -> express and mongoose 
+
+Routes using  here 
+->Get /takes =>  List all tasks 
+->Post /takes =>  Create tasks 
