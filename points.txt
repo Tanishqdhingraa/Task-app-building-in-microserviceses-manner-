@@ -1,0 +1,24 @@
+docker compose up -d 
+docker compose up --build
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+EXAMPLE DOCKER CODE 
+
+version: '3.8'   # version of docker-compose syntax
+
+services:        # all the containers in your app
+  service_name:
+    image: ... or build: ...
+    container_name: ...
+    ports:
+      - "host_port:container_port"
+    environment:
+      - KEY=value
+    volumes:
+      - "local_path:container_path"
+    depends_on:
+      - other_service
