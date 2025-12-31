@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ Configuration
 const PORT = process.env.PORT || 3005;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://mongo:27017/users';
+const MONGO_URI = process.env.MONGO_URI;
 
 // ✅ Middleware (body parser built into Express)
 app.use(express.json());
@@ -100,7 +100,7 @@ app.get('/users', async (req, res) => {
 // ✅ Start Server
 // ------------------------------------
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server  running on http://localhost:${PORT}`);
 });
 
 // ------------------------------------------------------------
